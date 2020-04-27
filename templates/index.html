@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API FOR IRIS FLOWER CLASSIFICATION </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+ <div class="login">
+	                       
+     <!-- Main Input For Receiving Query to our ML -->
+     <center>
+	     <h1>ML API for Credit Card Fraud Detection System : BY PRIYANG BHATT</h1>
+       <marquee><h1 align="center"> <font color="red"> AI Based Credit Card Fraud Detection System </font></h1></marquee>
+    <fieldset bordercolor="green">
+    <legend>Credit Card Fraud Detection System:</legend>	    
+    <form action="{{ url_for('predict')}}"method="post">
+    <input type="number" name="v1" placeholder="V1:" required>
+     <input type="number" name="v2" placeholder="V2:" required>
+     <input type="number" name="v3" placeholder="V3:" required>
+     <input type="number" name="v4" placeholder="V4:" required>
+      <br>
+    <input type="number" name="v5" placeholder="V5:" required>
+     <input type="number" name="v6" placeholder="V6:" required>
+     <input type="number" name="v7" placeholder="V7:" required>
+     <input type="number" name="v8" placeholder="V8:" required>
+     <br>
+    <input type="number" name="v9" placeholder="V9:" required>
+     <input type="number" name="v10" placeholder="V10:" required>
+    <input type="number" name="v11" placeholder="V11:" required>
+     <input type="number" name="v12" placeholder="V12:" required>
+     <br>
+   <input type="number" name="v13" placeholder="V13:" required>
+    <input type="number" name="v14" placeholder="V14:" required>
+    <input type="number" name="v15" placeholder="V15:" required>
+     <input type="number" name="v16" placeholder="V16:" required>
+    <br>
+     <input type="number" name="v17" placeholder="V17:" required>
+     <input type="number" name="v18" placeholder="V18:" required>
+     <input type="number" name="v19" placeholder="V19:" required>
+    <input type="number" name="v20" placeholder="V20:" required>
+     <br>
+     <input type="number" name="v21" placeholder="V21:" required>
+    <input type="number" name="v22" placeholder="V22:" required>
+    <input type="number" name="v23" placeholder="V23:" required>
+    <input type="number" name="v24" placeholder="V24:" required>
+    <br>
+
+     <input type="number" name="v25" placeholder="V25:" required>
+     <input type="number" name="v26" placeholder="V26:" required>
+     <input type="number" name="v27" placeholder="V27:" required>
+     <input type="number" name="v28" placeholder="V28:" required>
+     <br>
+     <input type="number" name="v29" placeholder="Enter Value of V29:" required>
+     <br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+     </fieldset>
+	    
+    </form> 
+    <center>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
